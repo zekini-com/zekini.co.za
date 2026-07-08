@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Dependencies (if a build is added later)
+node_modules/
+vendor/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
