@@ -287,9 +287,27 @@ img { max-width: 100%; display: block; }
 .work-thumb-1 { background: linear-gradient(135deg, #6c5ce7, #4bc8ff); }
 .work-thumb-2 { background: linear-gradient(135deg, #00d1b2, #4bc8ff); }
 .work-thumb-3 { background: linear-gradient(135deg, #ff7a59, #6c5ce7); }
-.work-thumb::after {
+.work-thumb-1::after, .work-thumb-2::after, .work-thumb-3::after {
   content: ""; position: absolute; inset: 0;
   background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 55%);
+}
+
+/* Redacted (NDA) work thumbnail — looks like a censored document */
+.work-thumb-redacted {
+  background: #090d17;
+  display: flex; flex-direction: column; justify-content: center; gap: 14px;
+  padding: 0 26px;
+}
+.work-thumb-redacted .rbar {
+  height: 15px; border-radius: 4px;
+  background: #04060c; border: 1px solid var(--border);
+}
+.redacted-name {
+  display: inline-block; margin-bottom: 10px;
+  font-size: 11.5px; font-weight: 800; letter-spacing: .28em; text-transform: uppercase;
+  color: rgba(255,255,255,.32);
+  background: #04060c; border: 1px solid var(--border);
+  padding: 5px 12px 5px 14px; border-radius: 4px; user-select: none;
 }
 .work-body { padding: 22px 24px 26px; }
 .tag {
