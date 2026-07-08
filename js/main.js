@@ -33,6 +33,33 @@
     });
   }
 
+  // Funky AI copilot typing demo
+  var typing = document.getElementById('demo-typing');
+  if (typing) {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var lines = [
+      "Scanning 2,481 accounts… 14 show churn signals: usage down >40% and no login in 21 days. Top risk: Northwind Ltd. Want me to draft a win-back email?"
+    ];
+    if (reduce) {
+      typing.textContent = lines[0];
+      typing.classList.add('done');
+    } else {
+      var full = lines[0];
+      var i = 0;
+      var tick = function () {
+        typing.textContent = full.slice(0, i);
+        i++;
+        if (i <= full.length) {
+          setTimeout(tick, 18 + Math.random() * 30);
+        } else {
+          typing.classList.add('done');
+        }
+      };
+      // Start once the hero is on screen
+      setTimeout(tick, 700);
+    }
+  }
+
   // Scroll reveal
   var revealTargets = document.querySelectorAll(
     '.card, .work-card, .steps li, .why-copy, .why-panel, .section-head, .stack-grid li'

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zekini CC — Laravel App Development</title>
-  <meta name="description" content="Zekini CC builds robust, scalable web applications with Laravel. From MVP to production, we ship reliable software for growing businesses." />
+  <title>Zekini CC — AI-Driven Laravel App Development</title>
+  <meta name="description" content="Zekini CC builds AI-native web applications with Laravel — copilots, RAG chatbots, LLM agents, semantic search and automation baked in. From MVP to production." />
   <meta name="theme-color" content="#0b0f1a" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Zekini CC — Laravel App Development" />
-  <meta property="og:description" content="We design and build production-grade Laravel applications for growing businesses." />
+  <meta property="og:title" content="Zekini CC — AI-Driven Laravel App Development" />
+  <meta property="og:description" content="We design and build AI-native Laravel applications — copilots, agents, RAG and automation for growing businesses." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://zekini.co.za" />
 
@@ -31,6 +31,7 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
+        <a href="#ai">AI</a>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#process">Process</a>
@@ -43,6 +44,7 @@
       </button>
     </div>
     <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#ai">AI</a>
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#process">Process</a>
@@ -54,23 +56,46 @@
   <main id="main">
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow">Laravel application specialists</p>
-        <h1>We build Laravel apps that<br /><span class="grad">businesses run on.</span></h1>
-        <p class="lede">
-          Zekini CC is a South African software studio that designs, builds and maintains
-          production-grade web applications. From first idea to shipped product — clean code,
-          honest timelines, and software that scales with you.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start a project</a>
-          <a href="#work" class="btn btn-ghost">See our work</a>
+      <div class="container hero-inner hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI-native Laravel studio</p>
+          <h1>Laravel apps with<br /><span class="grad">AI in their bones.</span></h1>
+          <p class="lede">
+            Zekini CC builds production-grade web applications on Laravel — then wires in the
+            funky stuff: copilots, chatbots that actually know your data, autonomous agents,
+            semantic search and workflow automation. Software that thinks along with your team.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a project</a>
+            <a href="#ai" class="btn btn-ghost">Explore AI features</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>AI-first</strong><span>Built in, not bolted on</span></li>
+            <li><strong>Laravel</strong><span>Rock-solid foundation</span></li>
+            <li><strong>End-to-end</strong><span>Design, build, deploy</span></li>
+          </ul>
         </div>
-        <ul class="hero-stats">
-          <li><strong>10+ yrs</strong><span>Laravel in production</span></li>
-          <li><strong>End-to-end</strong><span>Design, build, deploy</span></li>
-          <li><strong>Long-term</strong><span>Support &amp; partnership</span></li>
-        </ul>
+
+        <!-- Funky animated AI copilot demo -->
+        <div class="hero-demo" aria-hidden="true">
+          <div class="demo-window">
+            <div class="demo-bar">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="demo-title">zekini · ai copilot</span>
+            </div>
+            <div class="demo-body" id="demo-body">
+              <div class="msg msg-user"><span>Which customers are at risk of churning?</span></div>
+              <div class="msg msg-ai">
+                <span class="msg-avatar">✦</span>
+                <span class="msg-text" id="demo-typing"></span>
+              </div>
+            </div>
+            <div class="demo-input">
+              <span class="demo-caret">Ask anything…</span>
+              <span class="demo-send">↵</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="hero-glow" aria-hidden="true"></div>
     </section>
@@ -78,12 +103,86 @@
     <!-- Trusted / intro strip -->
     <section class="strip">
       <div class="container">
-        <p>Built for founders, teams and established businesses who need software that just works.</p>
+        <p>We speak fluent LLM — RAG, embeddings, agents, function calling and eval loops — on a foundation that won't fall over in production.</p>
+      </div>
+    </section>
+
+    <!-- AI capabilities -->
+    <section class="section" id="ai">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">The funky stuff</p>
+          <h2>AI features your users will actually use</h2>
+          <p class="section-sub">Not a chatbot bolted onto a corner of the screen. Real intelligence woven through the product — grounded in <em>your</em> data, running inside your Laravel app.</p>
+        </header>
+
+        <div class="grid grid-3 ai-grid">
+          <article class="card ai-card">
+            <div class="card-icon">🤖</div>
+            <h3>AI copilots &amp; assistants</h3>
+            <p>In-app assistants that answer questions, draft content and take actions on behalf of your users — with function calling wired straight into your models.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">💬</div>
+            <h3>RAG chatbots</h3>
+            <p>Chatbots that actually know your business. We ground responses in your docs, database and knowledge base so answers are accurate, not hallucinated.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">🧭</div>
+            <h3>Semantic search</h3>
+            <p>Search by meaning, not keywords. Vector embeddings with pgvector let users find the right thing even when they don't know the exact words.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">⚙️</div>
+            <h3>Autonomous agents</h3>
+            <p>Multi-step AI workflows that plan, use tools and get things done — triaging tickets, enriching leads or running back-office tasks on a schedule.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">📄</div>
+            <h3>Document intelligence</h3>
+            <p>Pull structured data out of invoices, contracts and PDFs. Classify, summarise and extract — turning messy documents into clean records automatically.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">✨</div>
+            <h3>Generative features</h3>
+            <p>Draft emails, generate summaries, spin up images, rewrite copy — the creative, delightful features that make your product feel a step ahead.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">🔮</div>
+            <h3>Predictive &amp; scoring</h3>
+            <p>Churn risk, lead scoring, demand forecasting, anomaly detection — models that turn your historical data into decisions users can act on.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">🎙️</div>
+            <h3>Voice &amp; multimodal</h3>
+            <p>Speech-to-text, voice interfaces and image understanding — meet your users wherever they are, on whatever they're holding.</p>
+          </article>
+          <article class="card ai-card">
+            <div class="card-icon">🛡️</div>
+            <h3>Guardrails &amp; evals</h3>
+            <p>The unglamorous bit that matters: prompt safety, output validation, cost controls and evaluation loops so your AI stays reliable in production.</p>
+          </article>
+        </div>
+
+        <div class="ai-banner">
+          <div class="ai-banner-text">
+            <h3>Model-agnostic by design</h3>
+            <p>We work across Claude, OpenAI, Gemini and open-source models — picking the right one for the job, and keeping you free to switch as the landscape shifts.</p>
+          </div>
+          <ul class="ai-chip-row">
+            <li>Claude</li>
+            <li>OpenAI</li>
+            <li>Gemini</li>
+            <li>Llama</li>
+            <li>Mistral</li>
+            <li>pgvector</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section class="section" id="services">
+    <section class="section section-alt" id="services">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">What we do</p>
@@ -94,18 +193,18 @@
         <div class="grid grid-3">
           <article class="card">
             <div class="card-icon">◈</div>
-            <h3>Custom web apps</h3>
-            <p>Bespoke Laravel applications tailored to your workflow — dashboards, portals, SaaS products and internal tools built to fit exactly how you work.</p>
+            <h3>AI-native web apps</h3>
+            <p>Bespoke Laravel applications with intelligence built in — dashboards, portals and SaaS products where AI copilots and automation are part of the core, not an afterthought.</p>
           </article>
           <article class="card">
             <div class="card-icon">⟐</div>
-            <h3>APIs &amp; integrations</h3>
-            <p>Robust REST and JSON APIs, third-party integrations, payment gateways and data syncs that connect your systems reliably and securely.</p>
+            <h3>LLM integration</h3>
+            <p>We plug large language models into your product properly — streaming responses, function calling, retrieval, cost controls and fallbacks — connected to your real data.</p>
           </article>
           <article class="card">
             <div class="card-icon">◆</div>
-            <h3>MVP &amp; product build</h3>
-            <p>Validate fast. We help founders ship a lean, credible first version — then iterate toward a full product without accumulating tech debt.</p>
+            <h3>AI MVP &amp; product build</h3>
+            <p>Validate an AI idea fast. We help founders ship a credible first version — prompt, pipeline and product — then iterate toward scale without the tech debt.</p>
           </article>
           <article class="card">
             <div class="card-icon">⧗</div>
@@ -127,7 +226,7 @@
     </section>
 
     <!-- Why us -->
-    <section class="section section-alt" id="why">
+    <section class="section" id="why">
       <div class="container why-inner">
         <div class="why-copy">
           <p class="eyebrow">Why Zekini</p>
@@ -156,7 +255,7 @@
     </section>
 
     <!-- Work / case studies -->
-    <section class="section" id="work">
+    <section class="section section-alt" id="work">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Selected work</p>
@@ -168,25 +267,25 @@
           <article class="work-card">
             <div class="work-thumb work-thumb-1" aria-hidden="true"></div>
             <div class="work-body">
-              <span class="tag">SaaS platform</span>
-              <h3>Subscription management portal</h3>
-              <p>Multi-tenant billing, role-based access and reporting for a services business.</p>
+              <span class="tag">AI copilot</span>
+              <h3>Support assistant on company data</h3>
+              <p>A RAG-powered copilot answering staff questions from internal docs — with citations and guardrails.</p>
             </div>
           </article>
           <article class="work-card">
             <div class="work-thumb work-thumb-2" aria-hidden="true"></div>
             <div class="work-body">
-              <span class="tag">Internal tools</span>
-              <h3>Operations dashboard</h3>
-              <p>Real-time workflow tracking that replaced a tangle of spreadsheets.</p>
+              <span class="tag">Automation</span>
+              <h3>Document extraction pipeline</h3>
+              <p>Invoices and contracts turned into structured records automatically — hours of manual capture, gone.</p>
             </div>
           </article>
           <article class="work-card">
             <div class="work-thumb work-thumb-3" aria-hidden="true"></div>
             <div class="work-body">
-              <span class="tag">Integration</span>
-              <h3>Payments &amp; API layer</h3>
-              <p>A resilient API connecting a legacy system to modern payment providers.</p>
+              <span class="tag">Semantic search</span>
+              <h3>Meaning-based catalogue search</h3>
+              <p>Vector search that finds the right product even when customers don't know the right words.</p>
             </div>
           </article>
         </div>
@@ -196,7 +295,7 @@
     </section>
 
     <!-- Process -->
-    <section class="section section-alt" id="process">
+    <section class="section" id="process">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">How we work</p>
@@ -230,12 +329,12 @@
     </section>
 
     <!-- Stack -->
-    <section class="section" id="stack">
+    <section class="section section-alt" id="stack">
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Our toolkit</p>
-          <h2>Proven, modern, boring in the best way</h2>
-          <p class="section-sub">We choose stable, well-supported tools — the kind that will still be maintainable years from now.</p>
+          <h2>A rock-solid base, a cutting-edge top</h2>
+          <p class="section-sub">Battle-tested Laravel foundations paired with a modern AI toolkit — so your product is both dependable and genuinely smart.</p>
         </header>
 
         <ul class="stack-grid">
@@ -243,14 +342,20 @@
           <li>PHP 8</li>
           <li>Livewire</li>
           <li>Vue.js</li>
-          <li>Inertia</li>
           <li>Tailwind CSS</li>
           <li>PostgreSQL</li>
-          <li>MySQL</li>
+          <li class="stack-ai">pgvector</li>
+          <li class="stack-ai">Claude</li>
+          <li class="stack-ai">OpenAI</li>
+          <li class="stack-ai">Embeddings</li>
+          <li class="stack-ai">RAG</li>
+          <li class="stack-ai">AI Agents</li>
           <li>Redis</li>
           <li>Docker</li>
           <li>REST APIs</li>
           <li>CI/CD</li>
+          <li>Queues</li>
+          <li>Laravel Cloud</li>
         </ul>
       </div>
     </section>
