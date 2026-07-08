@@ -41,8 +41,9 @@ In the Cloudflare Workers & Pages build settings for this repo:
 `wrangler deploy` reads `wrangler.jsonc` and uploads everything under `public/`.
 Deploy locally the same way with `npx wrangler deploy`.
 
-## Contact form
+## Contact
 
-The contact form posts to a placeholder Formspree endpoint. Replace
-`action="https://formspree.io/f/your-form-id"` in `index.html` with a real
-endpoint (or wire it to a backend) before going live.
+The primary call-to-action is a WhatsApp link (`wa.me/27762799254`) with a
+pre-filled message — no form backend, nothing to spam. Email
+(`hello@zekini.co.za`) is offered as a secondary fallback. To change the number,
+edit the `wa.me/…` link in `public/index.html`.
