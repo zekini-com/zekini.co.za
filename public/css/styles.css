@@ -237,6 +237,10 @@ img { max-width: 100%; display: block; }
   padding: 8px 14px; border-radius: 999px;
   background: rgba(255,255,255,.04); border: 1px solid var(--border);
 }
+.ai-chip-row .chip-primary {
+  background: var(--grad); color: #06121f; border-color: transparent;
+  box-shadow: 0 8px 20px -8px rgba(124,108,255,.6);
+}
 
 /* AI stack chips highlight */
 .stack-ai {
