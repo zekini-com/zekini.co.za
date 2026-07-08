@@ -9,27 +9,37 @@ Static site — plain HTML, CSS and vanilla JS. No build step required.
 
 ```
 zekini.co.za/
-├── index.html        # single-page marketing site
-├── css/styles.css    # styles
-├── js/main.js        # nav + scroll interactions
-└── assets/           # favicon and images
+├── public/               # deployed static assets
+│   ├── index.html        # single-page marketing site
+│   ├── css/styles.css    # styles
+│   ├── js/main.js        # nav + scroll interactions
+│   └── assets/           # favicon and images
+└── wrangler.jsonc        # Cloudflare Workers static-assets config
 ```
 
 ## Local preview
 
-Open `index.html` directly, or serve the folder:
+Serve the `public/` folder:
 
 ```bash
-php -S localhost:8000
+php -S localhost:8000 -t public
 ```
 
 Then visit http://localhost:8000
 
-## Deploying to Laravel Cloud
+## Deploying to Cloudflare Workers
 
-This repo is intentionally plain static so it can be deployed as-is. When wiring
-up Laravel Cloud, point the site root at this repository. If a Laravel wrapper is
-added later, move these files into `public/`.
+The site deploys as a Cloudflare Workers static-assets project. `wrangler.jsonc`
+points the `assets.directory` at `public/`, so no build step is needed.
+
+In the Cloudflare Workers & Pages build settings for this repo:
+
+- **Build command:** _None_
+- **Deploy command:** `npx wrangler deploy`
+- **Root directory:** `/`
+
+`wrangler deploy` reads `wrangler.jsonc` and uploads everything under `public/`.
+Deploy locally the same way with `npx wrangler deploy`.
 
 ## Contact form
 
