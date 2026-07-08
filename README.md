@@ -43,7 +43,7 @@ Deploy locally the same way with `npx wrangler deploy`.
 
 ## Contact
 
-The primary call-to-action is a WhatsApp link (`wa.me/27762799254`) with a
-pre-filled message — no form backend, nothing to spam. Email
-(`hello@zekini.co.za`) is offered as a secondary fallback. To change the number,
-edit the `wa.me/…` link in `public/index.html`.
+Contact is WhatsApp-only — a `wa.me/27762799254` link with a pre-filled message,
+plus a floating WhatsApp button on every page. No form backend and no email
+address in the page source, so there's nothing to spam or harvest. To change the
+number, edit the `wa.me/…` links in `public/index.html`.
