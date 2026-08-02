@@ -3,6 +3,15 @@
   "name": "zekini",
   "compatibility_date": "2026-01-01",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+
+    // Without this, every unknown path returned 200 with the full homepage.
+    // That is a soft 404: a crawler sees infinitely many distinct URLs all
+    // serving identical content, and a broken inbound link looks like it works.
+    //
+    // Declared here rather than left to the Workers default or to whatever the
+    // Cloudflare dashboard happens to say, so the site's behaviour is readable
+    // from the repository.
+    "not_found_handling": "404-page"
   }
 }

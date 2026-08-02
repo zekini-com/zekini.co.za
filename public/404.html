@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Zekini CC</title>
+  <meta name="description" content="That page does not exist on zekini.co.za." />
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- A 404 is not a page anyone should find in search results. -->
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    .notfound {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .notfound-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 48px 0;
+    }
+    .notfound-code {
+      font-family: var(--ff-head);
+      font-size: clamp(64px, 18vw, 132px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.04em;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .notfound h1 {
+      font-size: clamp(24px, 5vw, 34px);
+      text-wrap: balance;
+    }
+    .notfound p {
+      color: var(--muted);
+      max-width: 46ch;
+    }
+    .notfound-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="notfound">
+    <div class="container notfound-inner">
+      <p class="notfound-code" aria-hidden="true">404</p>
+      <h1>That page does not exist</h1>
+      <p>The link may be out of date, or the address mistyped. Everything on this site lives on one page.</p>
+      <div class="notfound-actions">
+        <a class="btn btn-primary" href="/">Back to the homepage</a>
+        <a class="btn btn-ghost" href="/#contact">Start a project</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
