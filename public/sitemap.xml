@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  One page, one entry. The site is a single-page marketing site whose nav is
+  in-page anchors, and anchors do not belong in a sitemap.
+
+  This exists for the same reason robots.txt does: without it, /sitemap.xml
+  returned the homepage with a 200, so anything fetching it got HTML.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://zekini.co.za/</loc>
+        <lastmod>2026-08-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+</urlset>
