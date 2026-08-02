@@ -1,0 +1,18 @@
+# zekini.co.za
+#
+# This file exists because without it the host served the entire homepage at
+# /robots.txt with a 200 — there was no such asset, so the request fell through
+# to index.html and a crawler asking for robots got HTML.
+#
+# Cloudflare prepends its own managed content-signals block above this, including
+# a `User-agent: *` group and the AI-crawler disallows. That block is deliberate
+# and is managed in the Cloudflare dashboard, not here. The group below repeats
+# the allow-all intent so this file still says something sensible on its own if
+# the managed block is ever switched off; duplicate `User-agent: *` groups are
+# merged by crawlers, and both say the same thing, so there is nothing to
+# conflict.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://zekini.co.za/sitemap.xml
