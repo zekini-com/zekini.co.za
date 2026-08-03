@@ -13,13 +13,15 @@
 # There is nothing proprietary in the prose. Ordinary search indexing is a
 # separate signal and is unaffected by this either way.
 #
-# Cloudflare's Managed robots.txt is being turned OFF for this zone. Until that
-# dashboard change lands, the live response still opens with an inherited block
-# that disallows nine AI crawlers and publishes a `Content-Signal: ai-train=no`
-# express reservation of rights under Article 4 of EU Directive 2019/790. That
-# block was never chosen, and it contradicts the group below. If you are reading
-# it in the live file, the toggle is still outstanding — fix the zone, not this
-# file.
+# Cloudflare's Managed robots.txt is OFF for this zone (turned off 2026-08-03,
+# verified by fetching this URL). While it was on, the live response opened with
+# an inherited block that disallowed nine AI crawlers and published a
+# `Content-Signal: ai-train=no` express reservation of rights under Article 4 of
+# EU Directive 2019/790 — none of which anyone had decided.
+#
+# If that block ever reappears above this text, the zone setting has been turned
+# back on. Fix the zone, not this file: two `User-agent: *` groups is malformed,
+# and a strict parser reads the first one and never reaches this.
 
 User-agent: *
 Allow: /
