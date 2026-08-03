@@ -1,16 +1,25 @@
-# zekini.co.za
+# zekini.co.za — crawl policy
 #
-# This file exists because without it the host served the entire homepage at
+# This file is the only crawl policy this site has. Fleet standard:
+# https://github.com/zekini-com/standards/blob/main/docs/crawler-policy.md
+#
+# It exists because without it the host served the entire homepage at
 # /robots.txt with a 200 — there was no such asset, so the request fell through
 # to index.html and a crawler asking for robots got HTML.
 #
-# Cloudflare prepends its own managed content-signals block above this, including
-# a `User-agent: *` group and the AI-crawler disallows. That block is deliberate
-# and is managed in the Cloudflare dashboard, not here. The group below repeats
-# the allow-all intent so this file still says something sensible on its own if
-# the managed block is ever switched off; duplicate `User-agent: *` groups are
-# merged by crawlers, and both say the same thing, so there is nothing to
-# conflict.
+# AI crawlers are deliberately ALLOWED. This is a marketing site whose entire
+# purpose is to be found, quoted and explained to someone who has never heard of
+# us; the crawlers that feed AI answers are a distribution channel, not a threat.
+# There is nothing proprietary in the prose. Ordinary search indexing is a
+# separate signal and is unaffected by this either way.
+#
+# Cloudflare's Managed robots.txt is being turned OFF for this zone. Until that
+# dashboard change lands, the live response still opens with an inherited block
+# that disallows nine AI crawlers and publishes a `Content-Signal: ai-train=no`
+# express reservation of rights under Article 4 of EU Directive 2019/790. That
+# block was never chosen, and it contradicts the group below. If you are reading
+# it in the live file, the toggle is still outstanding — fix the zone, not this
+# file.
 
 User-agent: *
 Allow: /
