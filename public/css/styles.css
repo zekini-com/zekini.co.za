@@ -290,8 +290,11 @@ img { max-width: 100%; display: block; }
 .work-thumb-4 { background: linear-gradient(135deg, #4bc8ff, #6c5ce7); }
 .work-thumb-5 { background: linear-gradient(135deg, #00d1b2, #6c5ce7); }
 .work-thumb-6 { background: linear-gradient(135deg, #ffb347, #ff7a59); }
+.work-thumb-7 { background: linear-gradient(135deg, #4bc8ff, #00d1b2); }
+.work-thumb-8 { background: linear-gradient(135deg, #2bd67b, #00d1b2); }
 .work-thumb-1::after, .work-thumb-2::after, .work-thumb-3::after,
-.work-thumb-4::after, .work-thumb-5::after, .work-thumb-6::after {
+.work-thumb-4::after, .work-thumb-5::after, .work-thumb-6::after,
+.work-thumb-7::after, .work-thumb-8::after {
   content: ""; position: absolute; inset: 0;
   background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 55%);
 }
